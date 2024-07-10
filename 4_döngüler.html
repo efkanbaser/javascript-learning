@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // fonksiyona dışardan bi tanım pushlayamıyorsun sanırım
+        // function Person(first, last, age, eyecolor) {
+        //     this.firstName = first;
+        //     this.lastName = last;
+        //     this.age = age;
+        //     this.eyeColor = eyecolor;
+        //     this.nationality = "English";
+        // }
+        // console.log(Person.nationality)
+
+        let count;
+        for(let i=0;i<10;i++){
+            count = i+1
+            console.log("Merhaba " + count)
+        }
+
+        sayilar = ["index 0"];
+        for(let i=1;i<=10;i++){
+            sayilar[i] = i*2;
+        }
+
+        let personel = {
+            adi: 'Efkan',
+            soyadi: 'Başer',
+            yas: 45,
+            email: 'efkanbaser@gmail.com',
+        };
+        for(let x in personel){
+            console.log(personel[x])
+        }
+
+        for(let x of sayilar){
+            console.log(x)
+        }
+
+        let calisan1 = { ad: 'Mehmet', soyad: 'Kara', yas: 30 }
+        let calisan2 = { ad: 'Ayşe', soyad: 'Karaman', yas: 25 }
+        let calisan3 = { ad: 'Fatih', soyad: 'Karahan', yas: 50 }
+        let calisanlar = [calisan1, calisan2, calisan3];
+        let calisan4 = { ad: 'Utku', soyad: 'Kahraman', yas: 45 }
+        calisanlar.push(calisan4);
+        for(let x of calisanlar){
+            console.log(x.ad + " " + x.soyad + " " + x.yas)
+        }
+
+        let i=1;
+        while(i<=5){
+            console.log(i)
+            i++;
+        }
+    </script>
+</body>
+
+</html>
