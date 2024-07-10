@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sayilar = [1,2,3,4,5]
+        for(let i=0; i<sayilar.length; i++){
+            console.log(sayilar[i])
+        }
+
+        let ogrenciler = new Array();
+        ogrenciler[0] = "ogrenci1"
+        ogrenciler[1] = "ogrenci2"
+        ogrenciler[2] = "ogrenci3"
+        for(let i=0; i<ogrenciler.length; i++){
+            console.log(ogrenciler[i])
+        }
+
+        let calisan1 = {ad:'Mehmet', soyad:'Kara', yas:30}
+        let calisan2 = {ad:'Ayşe', soyad:'Karaman', yas:25}
+        let calisan3 = {ad:'Fatih', soyad:'Karahan', yas:50}
+
+        let calisanlar = [calisan1, calisan2, calisan3];
+        console.log(calisanlar[2].ad+"  - "+calisanlar[2].yas);
+
+        let calisan4 = {ad:'Utku', soyad:'Kahraman', yas:45}
+        calisanlar.push(calisan4);
+        for(let i=0; i<calisanlar.length; i++){
+            console.log(calisanlar[i])
+        }
+    </script>
+</body>
+</html>
