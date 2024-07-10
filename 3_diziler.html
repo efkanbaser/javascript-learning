@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        let sayilar = [1,2,3,4,5]
-        for(let i=0; i<sayilar.length; i++){
+        let sayilar = [1, 2, 3, 4, 5]
+        for (let i = 0; i < sayilar.length; i++) {
             console.log(sayilar[i])
         }
 
@@ -17,22 +19,51 @@
         ogrenciler[0] = "ogrenci1"
         ogrenciler[1] = "ogrenci2"
         ogrenciler[2] = "ogrenci3"
-        for(let i=0; i<ogrenciler.length; i++){
+        for (let i = 0; i < ogrenciler.length; i++) {
             console.log(ogrenciler[i])
         }
 
-        let calisan1 = {ad:'Mehmet', soyad:'Kara', yas:30}
-        let calisan2 = {ad:'Ayşe', soyad:'Karaman', yas:25}
-        let calisan3 = {ad:'Fatih', soyad:'Karahan', yas:50}
+        let calisan1 = { ad: 'Mehmet', soyad: 'Kara', yas: 30 }
+        let calisan2 = { ad: 'Ayşe', soyad: 'Karaman', yas: 25 }
+        let calisan3 = { ad: 'Fatih', soyad: 'Karahan', yas: 50 }
 
         let calisanlar = [calisan1, calisan2, calisan3];
-        console.log(calisanlar[2].ad+"  - "+calisanlar[2].yas);
+        console.log(calisanlar[2].ad + "  - " + calisanlar[2].yas);
 
-        let calisan4 = {ad:'Utku', soyad:'Kahraman', yas:45}
+        let calisan4 = { ad: 'Utku', soyad: 'Kahraman', yas: 45 }
         calisanlar.push(calisan4);
-        for(let i=0; i<calisanlar.length; i++){
+        for (let i = 0; i < calisanlar.length; i++) {
             console.log(calisanlar[i])
         }
+
+        // lastIndexOf --> aramaya sondan başlar
+
+        // indexof
+        console.log(calisanlar.indexOf(calisan2))
+        //ikinci indexten bakmaya başlar
+        console.log(calisanlar.indexOf(calisan2, 2))
+
+        // istediğin öğrenciyi nasıl dönersin anlamadım, sadece 1. öğrenciyi dönüyor
+        function myFunction(){
+            return ogrenciler  
+        }
+        let a = ogrenciler.find(myFunction);
+        console.log(a)
+
+        const array1 = [5, 12, 8, 130, 44];
+        const found = array1.find((element) => element > 10);
+        console.log(found);
+        // Expected output: 12
+
+        // Both are ways to create functions
+        // () => {}
+        // function a() {}
+
+        // ASCII koduna göre sıralama yapar
+        const fruits = ["Banana", "Orange", "apple", "Mango"];
+        fruits.sort(); 
+        console.log(fruits)
     </script>
 </body>
+
 </html>
