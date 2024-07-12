@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = 10000000000; 
+        let b = a+1;
+
+        let sonuc = 0;
+        var date1 = new Date();
+        for (let i = 1; i <= a; i++) {
+            sonuc += i;
+        }
+        var date2 = new Date();
+        var diff = date2 - date1;
+        console.log(sonuc)
+        console.log(diff)
+
+        var date3 = new Date();
+        let c = a*b/2;
+        var date4 = new Date();
+        var diff2 = date4 - date3;
+        console.log(c)
+        console.log(diff2)
+       
+    </script>
+</body>
+
+</html>
