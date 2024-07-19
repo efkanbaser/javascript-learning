@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .gizle {
+            display: none;
+        }
+        .goster {
+            display: block;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="Merhaba('Efkan')">TIKLA</button>
+    <button onclick="gizle()">GIZLE</button>
+    <button onclick="goster()">GOSTER</button>
+    <div id="selam" class="container">Lorem ipsum dolor sit amet.</div>
+
+    <script>
+        let eleman = document.getElementById("selam")
+        console.log(eleman)
+        function gizle() {
+            eleman.classList.add("gizle");
+            eleman.classList.remove("goster");
+        }
+        function goster() {
+            eleman.classList.remove("gizle");
+            eleman.classList.add("goster");
+        }
+        function Merhaba(isim) {
+            alert("Merhaba " + isim);
+        }
+
+        // eleman.classList.add = "box"
+        // eleman.classList.remove = "container"
+        // eleman.setAttribute("type", "checkbox")
+    </script>
+</body>
+
+</html>
