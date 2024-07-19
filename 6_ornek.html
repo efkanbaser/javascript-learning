@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="paragraf">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, fugiat.</p>
+    <p class="paragraf">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, fugiat.</p>
+
+    <script>
+        // Her zaman arraye benzeyen bir object döner
+        // Bu objectin adı HTMLCollection
+        let elemanlar = document.getElementsByClassName("paragraf");
+        console.log(elemanlar[0].innerHTML);
+        console.log(typeof(elemanlar));
+        console.log(elemanlar);
+        let arr = new Array();
+        arr = ["selam", "efkan"];
+        console.log(arr);
+        console.log(HTMLCollection);
+        elemanlar.forEach(element => {
+            console.log(element.innerHTML);
+        });
+    </script>
+</body>
+</html>
